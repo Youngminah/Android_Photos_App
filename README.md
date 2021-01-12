@@ -7,21 +7,21 @@
 
 
 
-#  :memo: 개요
+##  :memo: 개요
 
 Navigation목록에 Slideshow를 클릭하면 저장된 사진들을 마우스 이벤트에 따라 SlideShow로 보여주며, 사용자가 입력한 번호에 따라 사진을 보여주기도 하는 Slideshow Application이다.
 
 
 
 
-# :memo: 실행사진
+## :memo: 실행사진
 
 
 
-# :memo: 중요한 코드
+## :memo: 중요한 코드
 
 
-## viewPager2
+### viewPager2
 
 viewPager2는 이미지를 마우스 드래그에 따라 슬라이드로 이동시킬수 있게 해주는 view이다. 이것은 기능을 생성하는 Java에서 PagerAdapter를 상속해야하는데 마우스의 드래그가 일어나면 이벤트 처리를 해준다. 
 이러한 어뎁터로 Fragment를 생성하여 viewpager2에 계속 추가를 해준다.
@@ -48,7 +48,7 @@ getItemCount 메소드 : 그냥 슬라이딩대상의 사진이 총 몇개인지
 
 
 
-## 이미지 Id 가져오기 🔑
+### 이미지 Id 가져오기 🔑
 
 ```java
 in drawable_id = getResources().getIdentifier("리소스이름", "drawable", getContext().getPackageName());
@@ -65,7 +65,7 @@ getIdentifier 메소드는 리소스이름을 가지는 Drawable 폴더의 고�
 참고 : ImageViewFragment는 Fragment를 상속받는 class임 (보라색 형광펜 색칠한부분에서 class 생성한 그 클래스의 객체)
 
 
-## setOnEditorActionListener (EditText에 이벤트 리스너)
+### setOnEditorActionListener (EditText에 이벤트 리스너)
 입력창은 사용자가 입력할때마다 바뀌어야한다. 그래서 이벤트 리스너를 달아주어야하는데 사실 나는 다른것을 이용했지만 밑에 API를 이용하는 것이 정석적이고 좀 더 쉽다.
          
 ```java
@@ -103,7 +103,7 @@ v는 현재 editText를 TextView로 가져오며 v.getText로 내용을 가지�
 
 
 
-## viewPager2.setCurrentItem(int id)
+### viewPager2.setCurrentItem(int id)
 
 
 
@@ -111,7 +111,7 @@ id에 해당하는 pager로 이동됨
 
 
 
-## viewPager2.registerOnPageChangeCallback()
+### viewPager2.registerOnPageChangeCallback()
 
 
 
@@ -120,7 +120,7 @@ page가 바뀌면 실행되는 함수. 페이지가 바뀌면 입력창의 번�
 
 
 
-# :mailbox_with_mail: Connect
+## :mailbox_with_mail: Connect
 
 ```
 
