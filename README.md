@@ -7,7 +7,7 @@
 
 
 
-###  ** :memo: 개요**
+###  **:memo: 개요**
 
 Navigation목록에 Slideshow를 클릭하면 저장된 사진들을 마우스 이벤트에 따라 SlideShow로 보여주며, 사용자가 입력한 번호에 따라 사진을 보여주기도 하는 Slideshow Application이다.
 
